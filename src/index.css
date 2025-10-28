@@ -30,6 +30,7 @@ body {
   padding: 10px;
   border: 1px #ccc;
   border-radius: 10px;
+  box-shadow: 0 0 2px #656464;
 }
 .note-header {
   display: flex;
@@ -38,7 +39,7 @@ body {
 .note-header button {
   font-size: 16px;
   background: transparent;
-  border: none;
+  border: 2px solid #635e5e;
   color: #000;
 }
 .note-form {
@@ -62,6 +63,10 @@ body {
   background-color: #5219cd;
   color: #fff;
   border: none;
+  border-radius: 5px;
+}
+.note-form button:hover {
+  background-color: #189f69;
 }
 .edit-btn {
   display: flex;
