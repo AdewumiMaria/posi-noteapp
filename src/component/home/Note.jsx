@@ -18,7 +18,7 @@ const Note = () => {
     event.preventDefault();
 
     const addNotes = {
-      id: 0,
+      id: notes.id,
       title: title,
       content: content,
     };
@@ -94,7 +94,7 @@ const Note = () => {
         </form>
         <div className="note-container">
           {notes.map((note, id) => (
-            <div className="note-item" onClick={() => editMode(id)}>
+            <div className="note-item" onClick={() => editMode(notes.id)}>
               <div className="note-header">
                 <button onClick={event => deleteNote(event, notes.id)}>
                   X
